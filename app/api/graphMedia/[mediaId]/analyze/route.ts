@@ -22,7 +22,7 @@ import {MediaIdParams} from "@/app/api/graphMedia/[mediaId]/MediaIdParams";
 import {addGraphUpdate} from "@/db/services/graphUpdates";
 import {planUpdatesFromMarkdownPrompt, updatesAsJSONFromMarkdownPrompt} from "@/llm/prompts/graphs/updateWithMarkdown";
 
-export const maxDuration = 300;
+export const maxDuration = 60;
 
 export const POST = async (req: Request, { params }: { params: MediaIdParams}) => {
     const graphMediaRow = await getGraphMedia(params.mediaId);
