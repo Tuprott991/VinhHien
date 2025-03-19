@@ -10,7 +10,8 @@ export async function POST(req: Request) {
     const initialMessages = messages.slice(0, -1);
     const currentMessage = messages[messages.length - 1];
 
-    const response = await openai.chat.completions.create({
+
+    let stream = OpenAIStream(await openai.chat.completions.create({
         model,
         response_format: {
             type: 'json_object'
@@ -29,11 +30,9 @@ export async function POST(req: Request) {
                         }
                     })),
                 ]: currentMessage.content,
-            },
+            },  
         ],
-    });
-    
-    let stream = OpenAIStream(response as AsyncIterable<any>);
+    }));
 
     return new StreamingTextResponse(
         stream, {

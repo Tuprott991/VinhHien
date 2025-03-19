@@ -32,10 +32,10 @@ const DeleteSubject: React.FC<Props> = ({ graphId }) => {
             >
                 <ModalOverlay />
                 <ModalContent>
-                    <ModalHeader>Delete Subject</ModalHeader>
+                    <ModalHeader>Xóa môn học</ModalHeader>
                     <ModalCloseButton />
                     <ModalBody>
-                        Are you sure you want to delete this subject? This action cannot be undone.
+                        Bạn có chắc chắn muốn xóa môn học này không? Hành động này không thể hoàn tác.
                     </ModalBody>
                     <ModalFooter>
                         <Button
@@ -53,7 +53,7 @@ const DeleteSubject: React.FC<Props> = ({ graphId }) => {
                 w={'100%'}
                 variant={'ghost'}
             >
-                Delete Subject
+                Xóa Môn Học
             </Button>
         </>
     );

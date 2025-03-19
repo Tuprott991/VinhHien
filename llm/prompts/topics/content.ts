@@ -1,7 +1,7 @@
 import {TopicRow} from "@/db/types/TopicRow";
 
 export const contentPrompt = (topicRow: TopicRow, incomingTopics: TopicRow[]) => `
-    Your goal is to generate more content on the topic of about ${topicRow.name} within the context of the topics leading to it: ${incomingTopics.map(topic => topic.name).join(", ")}.
+    Using Vietnamese output. Your goal is to generate more content on the topic of about ${topicRow.name} within the context of the topics leading to it: ${incomingTopics.map(topic => topic.name).join(", ")}.
   
     The note is part of a graph of topics. The topics that point to this from highest level to lowest level topic are: ${
         incomingTopics.map(topic => `${topic.name}: ${topic.text}`).join(", ")

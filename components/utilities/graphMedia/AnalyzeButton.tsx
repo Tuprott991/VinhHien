@@ -27,7 +27,7 @@ const AnalyzeButton: React.FC<Props> = ({ graphMedia, isDisabled, isMediaLoading
                 e.stopPropagation();
                 onAnalyze();
             }}
-            isDisabled={isDisabled}
+            isDisabled={isDisabled}                                                                        
         >
             Analyze
         </Button>

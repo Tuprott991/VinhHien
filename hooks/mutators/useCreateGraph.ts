@@ -27,8 +27,8 @@ const useCreateGraph = () => {
             });
             if(newTopic !== null) {
                 toast({
-                    title: "Graph created.",
-                    description: "Your graph has been created.",
+                    title: "Tạo môn học thành công",
+                    description: "Môn học của bạn đã được tạo.",
                     status: "success",
                     duration: 9000,
                     isClosable: true,

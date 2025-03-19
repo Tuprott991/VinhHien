@@ -16,14 +16,14 @@ const useAnalyzeGraphMedia = (graphMedia: GraphMedia) => {
         const result = await analyzeMedia(graphMedia);
         if(result) {
             toast({
-                title: "Media analyzed",
+                title: "Phân tích file thành công",
                 status: "success",
                 duration: 3000,
                 isClosable: true,
             });
         } else {
             toast({
-                title: "Error analyzing media",
+                title: "Lỗi phân tích file",
                 status: "error",
                 duration: 3000,
                 isClosable: true

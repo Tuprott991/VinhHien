@@ -46,7 +46,7 @@ const AnalyzeVideoButton: React.FC<Props> = ({ graphMedia }) => {
                 }}
                 isDisabled={isVideoProcessing}
             >
-                Analyze
+                Phân Tích
             </Button>
         </HStack>
     );
