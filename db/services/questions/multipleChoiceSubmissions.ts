@@ -116,7 +116,7 @@ export const findMultipleChoiceQuestionsByUserIdAndGraphId = async (
             ${QUESTION_SUBMISSIONS_TABLE}.question,
             ${QUESTION_SUBMISSIONS_TABLE}.correct,
             ${QUESTION_SUBMISSIONS_TABLE}.explanation,
-            ${QUESTION_SUBMISSIONS_TABLE}.timestamp,
+            ${QUESTION_SUBMISSIONS_TABLE}.timestamp,    
             ${MULTIPLE_CHOICE_SUBMISSIONS_TABLE}.question_id,
             ${MULTIPLE_CHOICE_SUBMISSIONS_TABLE}.option_a,
             ${MULTIPLE_CHOICE_SUBMISSIONS_TABLE}.option_b,

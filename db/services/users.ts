@@ -8,7 +8,6 @@ export const addUser = async (user: UserRow): Promise<UserRow | null> => {
     return add<UserRow, UserRow>(USERS_TABLE, user);
 };
 
-// READ
 
 export const getUser = async (id: UserRow["id"]): Promise<UserRow | null> => {
     const query = `SELECT * FROM ${USERS_TABLE} WHERE id = $1;`;

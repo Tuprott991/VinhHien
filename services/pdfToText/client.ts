@@ -3,7 +3,7 @@ import { DocumentAnalysisClient } from "@azure/ai-form-recognizer";
 import documentIntelligenceKeyCredential from "@/services/pdfToText/keyCredential";
 
 const documentAnalysisClient = new DocumentAnalysisClient(
-    'https://aivhedu.cognitiveservices.azure.com/',
+    'https://aieduchain.cognitiveservices.azure.com/',
     documentIntelligenceKeyCredential
 );
 
